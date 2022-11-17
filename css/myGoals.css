@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background: #E3CAA5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 /*************NAV*****************/
 nav {
-  margin-right: -35px;  
+  margin-right: -35px;
+  
 }
 
 ul{
@@ -19,8 +24,9 @@ nav > ul {
   display: flex;
   margin: 1.4rem;
   background: rgba(68, 84, 91, 0.6);
-  padding: 0 160px 0 100px;
-  
+  padding: 0 10px 0 10px;
+  box-shadow:  0px 5px 10px;
+  border-radius: 20px;
 }
 
 nav > ul a {
@@ -28,25 +34,32 @@ nav > ul a {
   text-decoration: none;
   cursor: pointer;
   padding: 20px 30px ;
-  /* margin: 10px; */
+   margin: 0 20px; 
   color: white;
   letter-spacing: .2rem;
 }
 /****************HEADER********************/
 header{
   display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  background: black;
+  background:#CEAB93;
+  box-shadow: 0px 5px 10px;
   margin-top: 0;
 }
 header a{
-  color: rgb(33, 116, 225);
-  padding: 20px;
   font-size: 2rem;
   text-decoration: none;
 }
+.headerLeft a{
+margin: 40px;
+}
+ion-icon{
+  color: #FFFBE9;
+  margin: 0 30px;
+}
+
 
 /**************About-ME*******************/
 
@@ -58,11 +71,11 @@ header a{
   align-items: center;
 }
 .MyGoalLeft{
-  background: rgb(27, 174, 185);
+  background: #AD8B73;
   border-radius: 10px;
   margin: 50px 20px;
   padding: 10px;
-  box-shadow: 10px 10px 5px rgb(145, 255, 0);
+  box-shadow: 0px 0px 5px 10px #FFFBE9;
   flex-basis: 300px;
 
 }
@@ -76,6 +89,7 @@ flex-basis: 950px;
 .MyGoalLeft h1{
   font-size: 3rem;
   padding: 60px;
+  color: #FFFBE9;
 }
 
 .MyGoalLeft li{
@@ -84,8 +98,10 @@ flex-basis: 950px;
   list-style-type: none;
   font-style: oblique;
   padding-bottom: 60px;
+  color: #FFFBE9;
 }
-.About-me img{
-  width: 300px;
-  height: 320px;
+.About-me2 img{
+  box-shadow: 0px 0px 5px 10px #FFFBE9;
+  border-radius: 10px;
+
 }

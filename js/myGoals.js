@@ -3,26 +3,7 @@ import { createNavbarLinks } from "../js/utils.js"
 //navBar
 
 document.querySelector('nav').appendChild(createNavbarLinks('Mygoals'))
-// scroll
-const reveals = document.querySelectorAll(".reveal")
 
-
-
-window.addEventListener("scroll", function(){
-
-  reveals.forEach(function(oneBlock){
-    const windowHeight = window.innerHeight
-    const revealTop = oneBlock.getBoundingClientRect().top
-    const revealPoint = 100
-
-    if(revealTop < windowHeight - revealPoint){
-      oneBlock.classList.add("active")
-
-    }else{
-      oneBlock.classList.remove("active")
-    }
-  })
-})
 
 
 //section
